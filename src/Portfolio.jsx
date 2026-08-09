@@ -18,6 +18,7 @@ const PROJECTS = [
     metric: "80% faster emergency donor search",
     detail:
       "Connects blood banks with donors in real time. Load-tested to 1,000+ concurrent users and validated against 200+ mock donor records for matching accuracy.",
+    github: "https://github.com/Swatii-21/Lifesync",
   },
   {
     file: "gigcred.tsx",
@@ -27,18 +28,19 @@ const PROJECTS = [
     metric: "35% lift in loan-eligibility accuracy",
     detail:
       "Scores freelancers on work history and verified skills instead of payslips — cutting default risk by 20% and opening fair credit access to 1,000+ workers.",
+    github: "https://github.com/yashi2606/Fintech",
   },
   {
-    file: "blockedu.tsx",
-    name: "Blockedu",
-    tagline: "AI-assisted blockchain learning hub",
-    stack: ["MERN", "Tailwind", "Vercel"],
-    metric: "30% lift in learner engagement",
+    file: "saarthiai.tsx",
+    name: "Saarthi AI",
+    tagline: "Offline-first multilingual AI assistant",
+    stack: ["React", "FastAPI", "Whisper"],
+    metric: "Voice + text assistance",
     detail:
-      "Curates videos, docs and Ethereum smart-contract templates, with the Gaia AI chatbot on hand for real-time support.",
+      "An offline-first multilingual AI assistant designed for rural and low-literacy users, supporting voice and text interaction across health, fire, disaster and awareness categories.",
+    github: "https://github.com/Swatii-21/Saarthi-AI",
   },
 ];
-
 const SERVICES = [
   {
     key: "01",
@@ -355,6 +357,33 @@ export default function Portfolio() {
           display:flex;align-items:center;gap:0.4rem;font-family:'JetBrains Mono',monospace;
           font-size:0.82rem;color:var(--accent);font-weight:600;
         }
+        .sw-card-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.sw-github-link{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.78rem;
+  font-weight:600;
+  color:var(--ink);
+  text-decoration:none;
+  border:1px solid var(--grid);
+  background:var(--paper);
+  padding:0.45rem 0.7rem;
+  border-radius:6px;
+  transition:all .2s ease;
+  white-space:nowrap;
+}
+
+.sw-github-link:hover{
+  color:var(--accent);
+  border-color:var(--accent);
+  transform:translateY(-2px);
+}
 
         /* ---------- SERVICES ---------- */
         .sw-services{border:1px solid var(--grid);border-radius:var(--radius);overflow:hidden;background:var(--panel);}
@@ -558,10 +587,21 @@ export default function Portfolio() {
                   ))}
                 </div>
                 <p className="sw-card-detail">{p.detail}</p>
-                <div className="sw-metric">
-                  <ArrowUpRight size={15} />
-                  {p.metric}
-                </div>
+                <div className="sw-card-bottom">
+  <div className="sw-metric">
+    <ArrowUpRight size={15} />
+    {p.metric}
+  </div>
+
+  <a
+    href={p.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="sw-github-link"
+  >
+    GitHub ↗
+  </a>
+</div>
               </div>
             ))}
           </div>
