@@ -477,7 +477,7 @@ export default function Portfolio() {
               </li>
             ))}
           </ul>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="sw-btn sw-btn-ghost sw-resume-btn">
+          <a href="https://drive.google.com/file/d/10Q5V4p26KorWTMNwecsbeQOqzGL2Lj-a/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="sw-btn sw-btn-ghost sw-resume-btn">
             Resume
           </a>
           <div className="sw-status">
@@ -499,7 +499,7 @@ export default function Portfolio() {
               {label}
             </a>
           ))}
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/10Q5V4p26KorWTMNwecsbeQOqzGL2Lj-a/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             Resume ↗
           </a>
         </div>
@@ -527,7 +527,7 @@ export default function Portfolio() {
               <a href="#contact" onClick={goTo("contact")} className="sw-btn sw-btn-ghost">
                 Say hello
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="sw-btn sw-btn-ghost">
+              <a href="https://drive.google.com/file/d/10Q5V4p26KorWTMNwecsbeQOqzGL2Lj-a/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="sw-btn sw-btn-ghost">
                 Download resume
               </a>
             </div>
